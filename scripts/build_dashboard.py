@@ -8,7 +8,7 @@ from pathlib import Path
 
 BASE = Path("/home/raspberry/iona")
 DB_PATH = BASE / "data" / "inteldash.db"
-WEB_DIR = BASE / "web"
+WEB_DIR = BASE / "docs"
 OUT_PATH = WEB_DIR / "index.html"
 
 
