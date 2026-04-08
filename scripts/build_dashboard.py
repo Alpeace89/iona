@@ -116,7 +116,7 @@ def main() -> None:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Intel Dash</title>
+  <title>IONA</title>
   <style>
     :root {{
       --bg: #0f172a;
@@ -205,8 +205,8 @@ def main() -> None:
 </head>
 <body>
   <div class="wrap">
-    <h1>Intel Dash</h1>
-    <div class="sub">Local intelligence dashboard generated from your current SQLite pipeline</div>
+    <h1>IONA</h1>
+    <div class="sub">Local news aggregation dashboard generated from your current SQLite pipeline</div>
 
     <div class="grid section">
       <div class="card">
@@ -250,7 +250,7 @@ def main() -> None:
     </div>
 
     <div class="footer">
-      Intel Dash v1 · Static local page
+      IONA · Static local page
     </div>
   </div>
 </body>
