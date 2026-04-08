@@ -38,7 +38,7 @@ def make_table(headers: list[str], rows: list[tuple]) -> str:
 
 
 def main() -> None:
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     WEB_DIR.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
 
@@ -221,7 +221,7 @@ def main() -> None:
       </div>
       <div class="card">
         <h2>Last Updated</h2>
-        <div>{esc(updated)}</div>
+        <div>{now}</div>
       </div>
     </div>
 
