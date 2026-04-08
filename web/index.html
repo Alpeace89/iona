@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intel Dash</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel2: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --border: #374151;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .sub {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+    }
+    .stat {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      background: var(--panel2);
+      position: sticky;
+      top: 0;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .titlecell {
+      max-width: 700px;
+      word-wrap: break-word;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 24px;
+      text-align: centre;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Intel Dash</h1>
+    <div class="sub">Local intelligence dashboard generated from your current SQLite pipeline</div>
+
+    <div class="grid section">
+      <div class="card">
+        <h2>Articles</h2>
+        <div class="stat">78</div>
+      </div>
+      <div class="card">
+        <h2>Clusters</h2>
+        <div class="stat">78</div>
+      </div>
+      <div class="card">
+        <h2>Last Updated</h2>
+        <div>2026-04-08T02:31:37+00:00</div>
+      </div>
+    </div>
+
+    <div class="grid section">
+      <div class="card">
+        <h2>Top Topics</h2>
+        
+    <table>
+      <thead><tr><th>Topic</th><th>Clusters</th></tr></thead>
+      <tbody>
+        <tr><td>untagged</td><td>46</td></tr>
+<tr><td>geopolitics</td><td>16</td></tr>
+<tr><td>energy</td><td>7</td></tr>
+<tr><td>space</td><td>5</td></tr>
+<tr><td>economy</td><td>3</td></tr>
+<tr><td>natural_hazards</td><td>1</td></tr>
+      </tbody>
+    </table>
+    
+      </div>
+      <div class="card">
+        <h2>Top Regions</h2>
+        
+    <table>
+      <thead><tr><th>Region</th><th>Clusters</th></tr></thead>
+      <tbody>
+        <tr><td>middle_east</td><td>34</td></tr>
+<tr><td>unassigned</td><td>20</td></tr>
+<tr><td>europe</td><td>9</td></tr>
+<tr><td>asia_pacific</td><td>4</td></tr>
+<tr><td>canada</td><td>4</td></tr>
+<tr><td>africa</td><td>3</td></tr>
+<tr><td>china</td><td>2</td></tr>
+<tr><td>latin_america</td><td>1</td></tr>
+<tr><td>united_states</td><td>1</td></tr>
+      </tbody>
+    </table>
+    
+      </div>
+    </div>
+
+    <div class="card section">
+      <h2>Top Clusters</h2>
+      
+    <table>
+      <thead><tr><th>ID</th><th>Title</th><th>Articles</th><th>Topic</th><th>Region</th></tr></thead>
+      <tbody>
+        <tr><td>76</td><td>Iran ceasefire deal a partial win for Trump - but it comes at a high cost</td><td>1</td><td>geopolitics</td><td>middle_east</td></tr>
+<tr><td>77</td><td>Trump-backed Republican Clay Fuller wins election to replace Marjorie Taylor Greene</td><td>1</td><td></td><td></td></tr>
+<tr><td>78</td><td>Oil slides after US-Iran ceasefire deal to reopen Strait of Hormuz</td><td>1</td><td>energy</td><td>middle_east</td></tr>
+<tr><td>79</td><td>Wireless Festival cancelled after Kanye West blocked from coming to UK</td><td>1</td><td></td><td>europe</td></tr>
+<tr><td>80</td><td>Has Artemis II shown we can land on the Moon again?</td><td>1</td><td>space</td><td></td></tr>
+<tr><td>81</td><td>US journalist Shelly Kittleson released after kidnap in Iraq, officials say</td><td>1</td><td></td><td>middle_east</td></tr>
+<tr><td>82</td><td>French couple leave Iran after more than three years in jail</td><td>1</td><td></td><td>middle_east</td></tr>
+<tr><td>83</td><td>Plan to scrap presidential elections puts Zimbabweans at loggerheads</td><td>1</td><td></td><td></td></tr>
+<tr><td>84</td><td>One gunman killed and two injured in shooting at Israeli consulate in Istanbul</td><td>1</td><td>geopolitics</td><td>middle_east</td></tr>
+<tr><td>85</td><td>WHO suspends Gaza medical evacuations after contractor killed by Israeli troops</td><td>1</td><td>geopolitics</td><td>middle_east</td></tr>
+<tr><td>86</td><td>Chilean woman accused of Pinochet-era kidnaps loses Australia extradition battle</td><td>1</td><td></td><td>asia_pacific</td></tr>
+<tr><td>87</td><td>JD Vance backs Orbán&#x27;s re-election bid in Budapest visit and hits out at EU</td><td>1</td><td></td><td>europe</td></tr>
+<tr><td>88</td><td>One dead as train travelling 99mph collides with lorry in France</td><td>1</td><td></td><td>europe</td></tr>
+<tr><td>89</td><td>Australia&#x27;s most-decorated living soldier charged over alleged war crimes</td><td>1</td><td></td><td>asia_pacific</td></tr>
+<tr><td>90</td><td>Bahamas police search for US woman who reportedly fell off boat</td><td>1</td><td></td><td></td></tr>
+<tr><td>91</td><td>Rapper Offset in hospital after being shot in Florida</td><td>1</td><td></td><td></td></tr>
+<tr><td>92</td><td>Vietnam&#x27;s leader To Lam strengthens power in unanimous assembly vote</td><td>1</td><td></td><td></td></tr>
+<tr><td>93</td><td>Carnival fever hits Lagos as locals celebrate Afro-Brazilian heritage</td><td>1</td><td></td><td>africa</td></tr>
+<tr><td>94</td><td>Tracking recent US-Israeli strikes on Iranian infrastructure</td><td>1</td><td></td><td>europe</td></tr>
+<tr><td>95</td><td>Little sign of breakthrough as Trump&#x27;s Iran deadline nears</td><td>1</td><td></td><td>middle_east</td></tr>
+      </tbody>
+    </table>
+    
+    </div>
+
+    <div class="card section">
+      <h2>Recent Clusters</h2>
+      
+    <table>
+      <thead><tr><th>ID</th><th>Title</th><th>Last Seen</th><th>Topic</th><th>Region</th></tr></thead>
+      <tbody>
+        <tr><td>153</td><td>Trump administration reaffirms plans to deport Abrego Garcia to Liberia</td><td>2026-04-08T01:48:18+00:00</td><td></td><td></td></tr>
+<tr><td>152</td><td>Climate activist Greta Thunberg slams Trump’s threats against Iran</td><td>2026-04-08T01:53:03+00:00</td><td></td><td>middle_east</td></tr>
+<tr><td>151</td><td>Iraqis celebrates US-Iran ceasefire as two-week halt in war begins</td><td>2026-04-08T01:55:02+00:00</td><td>geopolitics</td><td>middle_east</td></tr>
+<tr><td>150</td><td>FIFA opens disciplinary probe against Spanish FA after Islamaphobic chants</td><td>2026-04-07T19:50:28+00:00</td><td></td><td>europe</td></tr>
+<tr><td>149</td><td>Mediterranean migrant deaths mounting towards 1,000 in 2026: UN</td><td>2026-04-07T20:02:11+00:00</td><td></td><td></td></tr>
+<tr><td>148</td><td>Pope Leo slams Trump’s threat that Iran’s ‘civilisation will die’</td><td>2026-04-07T20:15:44+00:00</td><td></td><td>middle_east</td></tr>
+<tr><td>147</td><td>Russia and China block UN resolution on Strait of Hormuz</td><td>2026-04-07T20:17:54+00:00</td><td></td><td>china</td></tr>
+<tr><td>146</td><td>‘Policy of abuse’: Women march in Cuba against US energy blockade</td><td>2026-04-07T20:44:11+00:00</td><td>energy</td><td></td></tr>
+<tr><td>145</td><td>Palestinians queue for hours in pouring rain to get bread</td><td>2026-04-07T20:51:07+00:00</td><td></td><td>europe</td></tr>
+<tr><td>144</td><td>Libyan financier enabled ‘$300m in loans’ for Haftar’s Tripoli offensive</td><td>2026-04-07T21:02:27+00:00</td><td></td><td></td></tr>
+<tr><td>143</td><td>Barcelona’s Flick to defend ’emotional’ teen Lamine Yamal against criticism</td><td>2026-04-07T21:02:55+00:00</td><td></td><td></td></tr>
+<tr><td>142</td><td>How is the US-Israel war on Iran affecting Russian-Iranian relations?</td><td>2026-04-07T21:04:58+00:00</td><td>energy</td><td>middle_east</td></tr>
+<tr><td>141</td><td>Iranians brace for possible devastation as Trump’s deadline looms</td><td>2026-04-07T21:08:36+00:00</td><td></td><td>middle_east</td></tr>
+<tr><td>140</td><td>Protesters in Iraq swarm Kuwaiti consulate after deadly rocket attack</td><td>2026-04-07T21:12:04+00:00</td><td>natural_hazards</td><td>middle_east</td></tr>
+<tr><td>139</td><td>Kane leads Bayern to 2-1 win over Real Madrid in Champions League thriller</td><td>2026-04-07T21:28:34+00:00</td><td></td><td></td></tr>
+<tr><td>138</td><td>Pakistan appeals to Trump to extend deadline, Iran to reopen Hormuz Strait</td><td>2026-04-07T21:35:17+00:00</td><td>geopolitics</td><td>middle_east</td></tr>
+<tr><td>137</td><td>Iran warns region and beyond as tension builds ahead of US ultimatum</td><td>2026-04-07T21:48:54+00:00</td><td></td><td>middle_east</td></tr>
+<tr><td>136</td><td>Djibouti and the Horn of Africa: new front in the war on Iran</td><td>2026-04-07T21:57:50+00:00</td><td>economy</td><td>africa</td></tr>
+<tr><td>135</td><td>Arsenal beat Sporting with late Havertz goal in Champions League quarters</td><td>2026-04-07T22:03:12+00:00</td><td></td><td></td></tr>
+<tr><td>134</td><td>Iranian musician stages protest at power station over Trump threats</td><td>2026-04-07T22:13:09+00:00</td><td></td><td>middle_east</td></tr>
+      </tbody>
+    </table>
+    
+    </div>
+
+    <div class="card section">
+      <h2>Middle East Watch</h2>
+      
+    <table>
+      <thead><tr><th>Title</th><th>Topic</th><th>Articles</th></tr></thead>
+      <tbody>
+        <tr><td>Iran ceasefire deal a partial win for Trump - but it comes at a high cost</td><td>geopolitics</td><td>1</td></tr>
+<tr><td>Oil slides after US-Iran ceasefire deal to reopen Strait of Hormuz</td><td>energy</td><td>1</td></tr>
+<tr><td>US journalist Shelly Kittleson released after kidnap in Iraq, officials say</td><td></td><td>1</td></tr>
+<tr><td>French couple leave Iran after more than three years in jail</td><td></td><td>1</td></tr>
+<tr><td>One gunman killed and two injured in shooting at Israeli consulate in Istanbul</td><td>geopolitics</td><td>1</td></tr>
+<tr><td>WHO suspends Gaza medical evacuations after contractor killed by Israeli troops</td><td>geopolitics</td><td>1</td></tr>
+<tr><td>Little sign of breakthrough as Trump&#x27;s Iran deadline nears</td><td></td><td>1</td></tr>
+<tr><td>Indian migrant workers hit by cooking gas shortages are leaving cities</td><td>energy</td><td>1</td></tr>
+<tr><td>&#x27;We&#x27;re sinking deeper&#x27;: Iranians brace for infrastructure strikes as Trump deadline nears</td><td></td><td>1</td></tr>
+<tr><td>Iranians form human chains at bridges and power plants</td><td></td><td>1</td></tr>
+      </tbody>
+    </table>
+    
+    </div>
+
+    <div class="footer">
+      Intel Dash v1 · Static local page
+    </div>
+  </div>
+</body>
+</html>

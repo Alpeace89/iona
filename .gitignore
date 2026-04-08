@@ -8,4 +8,3 @@ data/*.db
 logs/
 archive/
 backups/
-web/index.html
