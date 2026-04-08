@@ -38,6 +38,7 @@ def make_table(headers: list[str], rows: list[tuple]) -> str:
 
 
 def main() -> None:
+    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     WEB_DIR.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
 
@@ -206,6 +207,7 @@ def main() -> None:
 <body>
   <div class="wrap">
     <h1>IONA</h1>
+<p style="font-size: 0.9em; color: #666;">Last updated: {now}</p>
     <div class="sub">Intelligence On News Aggregation</div>
 
     <div class="grid section">
