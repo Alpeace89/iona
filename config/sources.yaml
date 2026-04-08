@@ -1,0 +1,48 @@
+sources:
+  - name: BBC World
+    type: rss
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+    reliability_score: 0.90
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"
+
+  - name: CBC World
+    type: rss
+    url: "https://www.cbc.ca/webfeed/rss/rss-world"
+    reliability_score: 0.90
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"
+
+  - name: Al Jazeera
+    type: rss
+    url: "https://www.aljazeera.com/xml/rss/all.xml"
+    reliability_score: 0.80
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"
+
+  - name: AP Top News
+    type: rss
+    url: "https://apnews.com/hub/ap-top-news?output=rss"
+    reliability_score: 0.92
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"
+
+  - name: NPR World
+    type: rss
+    url: "https://feeds.npr.org/1004/rss.xml"
+    reliability_score: 0.88
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"
+
+  - name: Guardian World
+    type: rss
+    url: "https://www.theguardian.com/world/rss"
+    reliability_score: 0.85
+    enabled: true
+    region_focus: "global"
+    topic_focus: "general"

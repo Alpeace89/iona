@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+data/snapshots/
+data/*.db
+logs/
+archive/
+backups/
+web/index.html
