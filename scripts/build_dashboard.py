@@ -206,7 +206,7 @@ def main() -> None:
 <body>
   <div class="wrap">
     <h1>IONA</h1>
-    <div class="sub">Local news aggregation dashboard generated from your current SQLite pipeline</div>
+    <div class="sub">Intelligence On News Aggregation</div>
 
     <div class="grid section">
       <div class="card">
